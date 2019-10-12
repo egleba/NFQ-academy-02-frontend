@@ -1,4 +1,4 @@
-# Home work for NFQ academy lecture '#'02 Frontend intro
+# Home work for NFQ academy lecture #02 Frontend intro
 
 A component with two modifier classes styled using SUIT CSS.
 
@@ -10,7 +10,7 @@ Node.js and npm are required to run this project.
 
 When you have them installed, open the terminal and type in the following order:
 1. `sudo npm install gulp-cli -g`
-2. `git clone https://github.com/egleba/NFQ-frontend-2019.git`
+2. `git clone https://github.com/egleba/NFQ-academy-02-frontend.git`
 3. `cd` to the directory
 4. `npm init`
 5. `npm install --save-dev gulp`
