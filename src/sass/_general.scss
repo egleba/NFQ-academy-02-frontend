@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  background-color: $bgColor;
+}
+
+.messages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20%;
+}
+
+.message {
+  width: 100%;
+  background-color: $bgColorMessage;
+  border-radius: 5px;
+  border: 1px solid;
+  border-right: 40px solid;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.21);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.message--incorrect {
+  border-color: $incorrect;
+
+  &:hover {
+    border-right: 50px solid $incorrect;
+    padding-right: 10px;
+  }
+}
+
+.message--correct {
+  border-color: $correct;
+
+  &:hover {
+    border-right: 50px solid $correct;
+    padding-right: 10px;
+  }
+}
+
+.message-heading {
+  font-size: 14px;
+  color: $textColor;
+  line-height: 33px;
+}
+
+.message-text {
+  font-size: 14px;
+  color: $textColor;
+  line-height: 33px;
+}
+
+.message-link {
+  text-decoration: none;
+  color: $textColorHighlited;
+}
+
+.button {
+  text-transform: uppercase;
+  color: $textColorButton;
+  background-color: $bgColorButton;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  align-self: flex-end;
+  border: none;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.21);
+
+  &:hover {
+    background-color: #2985c2;
+    cursor: pointer;
+  }
+}
